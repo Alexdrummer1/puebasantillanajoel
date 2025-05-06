@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>Prueba Santillana Joel</title>
+    <style>
+        input {border-color:#FC014F !important;}
+        button {background-color: #0019FD !important;}
+    </style>
+</head>
+<body>
+    <form id="enviar-form" action="envia.php" method="post">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputState">Sexo</label>
+                <select id="inputState" class="form-control">
+                    <option value="Mujer">Mujer</option>
+                    <option value="Hombre">Hombre</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="cp">cp</label>
+                <input type="text" class="form-control" id="cp" placeholder="Código Postal">
+              </div>
+
+              <div class="form-group col-md-6">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" placeholder="Mensaje"></textarea>
+              </div>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="acepto-terminos">
+                    <label class="form-check-label" for="acepto-terminos">
+                    Acepto términos y condiciones
+                    </label>
+                </div>
+            </div>
+          
+          <button name="enviar" type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
+    <script src="bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
